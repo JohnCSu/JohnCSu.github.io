@@ -120,7 +120,7 @@ well… that hard to mesh!):
 
 - Tetrahedral elements (Tets)
 
-<img src="./images/media/image1.png"
+<img src="images\2024-02-27-An-Introduction-To-Meshing-In-FEA/image1.png"
 style="width:3.17395in;height:3.677in" />
 
 In a perfect world, it shouldn’t matter which elements, but we don’t
@@ -188,7 +188,7 @@ There are generally 3 types of automatic meshing methods:
 
 - Swept/Mixed Structured – unstructured.
 
-<img src="./images/media/image2.png"
+<img src="images\2024-02-27-An-Introduction-To-Meshing-In-FEA/image2.png"
 style="width:9.12295in;height:4.05278in" />
 
 Hexahedral elements tend to only be meshable through structured and
@@ -211,7 +211,7 @@ partition the geometry (discussed in a later section) so instead of 1
 region with a hole, we create 4 smaller regions that have no hole (but
 together form the original geometry).
 
-<img src="./images/media/image3.png"
+<img src="images\2024-02-27-An-Introduction-To-Meshing-In-FEA/image3.png"
 style="width:6.4715in;height:4.92917in" />
 
 Structured meshing only works on simple regions, such as rectangular
@@ -314,10 +314,10 @@ choose a low order either linear, quadratic or cubic interpolation. For
 orders higher than linear, we often add ‘midnodes’ – nodes that are
 along the edge of elements not just at each element vertex:
 
-<img src="./images/media/image4.png"
+<img src="images\2024-02-27-An-Introduction-To-Meshing-In-FEA/image4.png"
 style="width:5.06061in;height:2.81944in" />
 
-<img src="./images/media/image5.png"
+<img src="images\2024-02-27-An-Introduction-To-Meshing-In-FEA/image5.png"
 style="width:4.16343in;height:3.25486in"
 alt="A diagram of a line graph Description automatically generated" />
 
@@ -361,7 +361,7 @@ of the finite element). We can also use less points in each direction
 for more efficient calculations in return for a higher integration
 error. In this case these elements are ‘reduced’ order elements.
 
-<img src="./images/media/image7.svg"
+<img src="images\2024-02-27-An-Introduction-To-Meshing-In-FEA/image7.svg"
 style="width:4.54546in;height:2.32292in" />
 
 Just like element order and shape, integration order can affect the
@@ -397,7 +397,7 @@ stiffness to prevent the deformation without affecting the results
 significantly (generally hourglass control only contributes less than 5%
 of the total energy of the system).
 
-<img src="./images/media/image8.png"
+<img src="images\2024-02-27-An-Introduction-To-Meshing-In-FEA/image8.png"
 style="width:6.59375in;height:4.15094in" />
 
 When choosing the initial element, always start with a reduced order
@@ -427,7 +427,7 @@ other side with the hole, we can achieve a much more uniform mesh. We
 could partition the geometry further to get an even more symmetrical and
 better mesh.
 
-<img src="./images/media/image9.png"
+<img src="images\2024-02-27-An-Introduction-To-Meshing-In-FEA/image9.png"
 style="width:8.22439in;height:4.64722in" />
 
 The advice I have for partitioning is to try and separate regions into

@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "John Su / Personal Blog"
+title                    : "John's Personal Blog"
 title_separator          : "-"
 name                     : &name "John Su"
 description              : &description "personal description"
@@ -21,7 +21,7 @@ repository               : "JohnCSu/JohnCSu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Me.jpg"
   name             : "John Su"
   pronouns         : # example: "she/her"  
   bio              : "An FEA Engineer who likes Deep Learning"

@@ -17,7 +17,7 @@ You can read my summer research report [here](/files/Summer_Research_Report_comp
  -->
 Please see a curated lists of the projects/topics below.
 
-{% for post in site.posts %}
+{% for post in site.projects %}
   <h2>
     <a href="{{ post.url }}">
     {{post.title}}  

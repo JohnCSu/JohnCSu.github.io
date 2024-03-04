@@ -1,6 +1,6 @@
 ---
 title: "Adapters for Low Precision Neural Networks"
-excerpt: "A Research into the use of adapters for finetuning quantized neural networks namely binarised neural networts <br/><img src='/images/500x300.png'>"
+excerpt: "A Research into the use of adapters for finetuning quantized neural networks namely binarised neural networts <br/><img src='/images/projects/Serial Vs Parallel.jpg'>"
 permalink: /projects/Thesis
 collection: projects
 ---
@@ -33,3 +33,5 @@ networks on low end hardware via BNNs with adapters being used to tailor the net
 the specific task.
 
 You can read rest [here](/files/JohnSuThesis_Adapters.pdf)
+
+<br/><img src='/images/projects/Serial Vs Parallel.jpg'>

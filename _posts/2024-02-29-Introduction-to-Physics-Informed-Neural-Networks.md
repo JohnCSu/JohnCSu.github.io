@@ -1,3 +1,11 @@
+---
+layout : archive
+permalink: /Intro-To-PINNs/
+title: "Introduction to Physics Informed Neural Networks"
+author_profile: true
+collections: blogposts
+tags: ML
+---
 Physics informed neural networks or PINNs for short, are a machine
 learning paradigm where we use neural networks to solve equations that
 describe physical phenomena such as fluid flow. Physical phenomena are

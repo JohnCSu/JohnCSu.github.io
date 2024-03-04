@@ -1,5 +1,11 @@
-# A Basic Introduction to Meshing
-
+---
+layout : archive
+permalink: /Intro-To-Meshing/
+title: "Introduction to Meshing In FEA"
+author_profile: true
+collections: blogposts
+tags: 'FEA'
+---
 Meshing is often a pain point and bottleneck for FEA analysts. With so
 many shapes, sizes, and options to choose from, it can be daunting to
 new users. I remember teaching an Abaqus Introductory course and seeing
@@ -77,7 +83,7 @@ algorithm!</p></td>
 </tbody>
 </table>
 
-## Why the choices in meshing matter
+# Why the choices in meshing matter
 
 Simply put the speed, accuracy and convergence of our models depends
 significantly on our meshing choices! You want to be playing the game of
@@ -101,7 +107,7 @@ This is a result of the discretization process. A well-known example is
 numerical viscosity that is introduced when discretizing fluid
 equations. We’ll discuss some of these in later chapters.
 
-## Element Shapes
+# Element Shapes
 
 In FEA there are a wide library of shapes. We’ll focus on 4 main element
 shapes that are used in 2D and 3D domains (There are others such as
@@ -161,7 +167,7 @@ So, when choosing the element shape, one should try and mesh with
 Hex/Quad elements first. But If the geometry just does not allow it,
 then resort to using tets/tri elements.
 
-## Meshing Algorithm
+# Meshing Algorithm
 
 In the previous chapter, I mentioned that sometimes the geometry won’t
 allow you to mesh with certain elements. This could be (but not limited
@@ -197,7 +203,7 @@ and can be meshed using any of the methods. As a rule of thumb, you
 should always try and get a structured mesh followed by a swept mesh. If
 this is too difficult or time consuming, use an unstructured mesh.
 
-### Structured
+## Structured
 
 Structured meshes have some sort of regular arrangement and connectivity
 between elements. A chessboard being made of 8x8 smaller squares is an
@@ -223,7 +229,7 @@ and
 For Abaqus’ documentation gives a great explanation for this (you’ll
 need to create a free account to see this)
 
-### Unstructured
+## Unstructured
 
 Unstructured meshes are of course the opposite to structured meshes: the
 elements and their connectivity is irregular and can’t be expressed in
@@ -237,7 +243,7 @@ significantly easier and faster process than structured meshing.
 However, the flip side is that unstructured meshes tend to have longer
 run times than their structure or swept counterparts.
 
-### Swept
+## Swept
 
 Finally, we have swept meshing which is like an in-between of structured
 and unstructured meshing. A swept mesh first starts by picking a
@@ -254,7 +260,7 @@ while the meshing along the swept path is a form of structured meshing.
 Swept meshing is great in geometries that are derived from extrusions
 and sweeps such as pipes.
 
-## Mesh Uniformity and Size
+# Mesh Uniformity and Size
 
 You may have noticed that the ‘good’ meshes you’ve seen in the previous
 images look quite pleasing to look at. This is seriously a good rule of
@@ -305,7 +311,7 @@ discretization then that’s a good starting point. Remember, if you are
 always unsure, always run the model with a courser mesh and rerun with a
 finer mesh if necessary.
 
-## Element Order
+# Element Order
 
 In FEA, we interpolate the values of interest (such as displacement or
 velocity) within an element. The interpolation/element order we choose
@@ -345,7 +351,7 @@ can be used in high deformation models. When in doubt linear elements
 should be used first (exception are tri/tet elements where you should
 use quadratic elements)
 
-## Integration Order
+# Integration Order
 
 When we solve our FEA equations, we need to integrate over each
 element’s volume. To do this we often use gaussian quadrature. Gaussian
@@ -404,7 +410,7 @@ When choosing the initial element, always start with a reduced order
 element if you can. These are cheaper than fully integrated elements and
 most codes provide hourglass control.
 
-## Partitioning
+# Partitioning
 
 In the previous sections, we’ve mainly talked in relation to geometries
 that are easy to mesh such as rectangles and circles. However, in the
@@ -437,7 +443,7 @@ partitioning to break down complicated regions into ‘simpler’ regions
 such as the hole in the plate example above. For many packages
 partitioning is your best tool in controlling the meshing algorithm!
 
-## Conclusion
+# Conclusion
 
 That does it for my introduction to meshing. There’s still a huge sea of
 other stuff to consider (e.g. shell and beam elements, material

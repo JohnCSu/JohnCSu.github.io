@@ -4,7 +4,7 @@ excerpt: "A project investigating Physics Informed Neural networks and their Pot
 permalink: /projects/SummerPINNs
 collection: projects
 ---
-You can read the report [here](/files/Summer_Research_Report_compressed.)
+You can read the report [here](/files/Summer_Research_Report_compressed) and the powerpoint summary [here](/images/projects/Josu7836_VRI_Poster.gif)
 
 # Abstract
 Deep learning and neural networks has seen explosive growth in recent years, thanks to the significant advancement in computer hardware and the highly parallelisable backpropagation algorithms. Furthermore, Neural networks are known to be universal approximators meaning with enough data and network size, any function can be arbitarily approximated to any accuracy.

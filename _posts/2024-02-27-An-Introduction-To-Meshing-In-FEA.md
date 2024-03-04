@@ -6,6 +6,10 @@ author_profile: true
 collections: blogposts
 tags: 'FEA'
 ---
+
+1. TOC
+{:toc}
+
 Meshing is often a pain point and bottleneck for FEA analysts. With so
 many shapes, sizes, and options to choose from, it can be daunting to
 new users. I remember teaching an Abaqus Introductory course and seeing

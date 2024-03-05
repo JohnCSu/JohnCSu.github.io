@@ -10,7 +10,6 @@ tags: ML
 1. TOC
 {:toc}
 
-
 Physics informed neural networks or PINNs for short, are a machine
 learning paradigm where we use neural networks to solve equations that
 describe physical phenomena such as fluid flow. Physical phenomena are
@@ -85,13 +84,13 @@ $$
 \mathcal{L}_{obj} = \mathcal{L}_{residual} + \mathcal{L}_{data} 
 $$
 
-- $\mathcal{L}_{residual}$ is the loss associated with how
+-\\(\mathcal{L}_{residual}\\) is the loss associated with how
   well the neural network approximates the underlying equations
   governing our system.
 
-- $\mathcal{L}_{data}$ is the loss associated with how well the
+-\\(\mathcal{L}\_{data}\\) is the loss associated with how well the
   neural network is approximating the data in our system. Note that
-  $\mathcal{L}_{data}$ also includes things like boundary conditions
+ \\(\mathcal{L}_{data}\\)also includes things like boundary conditions
   and initial conditions.
 
 The residual of an equation is done by moving everything in the equation
@@ -101,12 +100,12 @@ the diffusion equation is given by the well-known PDE:
 
 $$\frac{\partial^{2}u}{\partial t^{2}} = k\frac{\partial^{2}u}{\partial x^{2}}$$
 
-Where we set k=1 and *u* spans from $x\in\mathbb{R}$ (The whole number line) and
-$t\in[0,10]$.
+Where we set k=1 and *u* spans from\\(x\in\mathbb{R}\\)(The whole number line) and
+\\(t\in[0,10]\\).
 
 The residual is therefore given as:
 
-$$R = \frac{\partial^{2}u\_{net}}{\partial t^{2}} - D\frac{\partial^{2}u\_{net}}{\partial x^{2}}$$
+$$R = \frac{\partial^{2}u_{net}}{\partial t^{2}} - D\frac{\partial^{2}u_{net}}{\partial x^{2}}$$
 
 We use the residual *R* as a sort of measure for how close we are to
 approximating this equation. If *R* is very far away from zero, then our
